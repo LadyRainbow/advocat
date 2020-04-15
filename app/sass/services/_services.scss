@@ -1,0 +1,23 @@
+.services-page {
+    background-color: #fff;
+    h2 {
+        margin-bottom: 64px;
+        color: $dark;
+    }
+    .areas-block {
+        width: 33.1%;
+        margin: 1px;
+    }
+}
+
+@media (max-width: 767px) {
+    .services-page {
+        h2 {
+            margin-bottom: 34px;
+        }
+        .areas-block {
+            width: 100%;
+            margin: 1px 0;
+        }
+    }
+}

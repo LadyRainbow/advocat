@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Advocat</title>
+  <link rel="shortcut icon" type="image/png" href="https://alfa-cube.ru/img/favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://w.cultserv.ru/css/common.css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../build/css/selectize.css">
+  <link rel="stylesheet" href="../../build/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <header>
+    <div class="header-top">
+        <div class="flex-vertical header-side">
+            <div class="burger flex-center"><span></span></div>
+            <a class="logo" href="/">
+                <img src="../../build/img/logo.png" alt="">
+                <span>Lawyer<br>Company</span>
+            </a>
+        </div>
+        <div class="header-phone-wrp header-side">
+            <a href="tel:+7 (123) 456-78-90">+7 (123) 456-78-90</a>
+        </div>
+        <div class="flex-vertical header-side flex-right">
+            <ul class="header-socc">
+                <li><a href="#"><i class="fab fa-viber"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+            </ul>
+            <div class="get-consult-header flex-center">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <ul class="header-bottom-list header-bottom-list-end">
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Услуги</a></li>
+        </ul>
+        <a class="header-bottom-logo" href="/">
+            <img src="../../build/img/logo.png" alt="">
+        </a>
+        <ul class="header-bottom-list">
+            <li><a href="#">блог</a></li>
+            <li><a href="#">Рейтинг</a></li>
+            <li><a href="#">о нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">F.A.Q.</a></li>
+        </ul>
+    </div>
+</header>
+
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu">
+    <div class="menu-overlay"></div>
+    <div class="menu-content">
+        <div>
+            <div class="menu-content-top">
+                <a href="tel:+7 (123) 456-78-90">+7 (123) 456-78-90</a>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#">Каталог продукции</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Проектировщику</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="get-consult flex flex-center">консультация</div>
+    </div>
+    <div class="btn-menu-close"></div>
+</div>
+
+        </div>
+        <div class="search-mob-wrapper">
+            <!-- FileInjector:search -->
+        </div>
+        <div class="pages-wrapper">
+            <div class="article-page">
+    <div class="article-page-plashka"></div>
+    <div class="container">
+        <div class="row article-page-row">
+            <div class="col-md-6 col-12">
+                <div class="articles-img-wrapper">
+                    <div class="article-page-plashka-mob"></div>
+                    <div class="article-img">
+                        <div class="success-line"></div>
+                        <img src="../../build/img/articles.jpg" alt="">
+                        <div class="articles-overlay"></div>
+                        <div class="article-data">
+                            <p>30</p>
+                            <p>03.20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="article-prev">
+                    <a href="#" class="back">Все дела</a>
+                    <h2>Договор строительного подряда</h2>
+                    <div class="articles-plashka">Документы</div>
+                    <p class="article-prev-text">Договоры подряда относятся к числу самых распространённых типов контракта. Они нашли применение в самых разных экономических сферах. Но есть область экономики, где этот тип договоров особенно популярен – строительная.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="article-page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-12 offset-lg-2 offset-md-1 offset-0">
+                    <article>
+                        <h3>Договор строительного подряда</h3>
+                        <p>Договоры подряда относятся к числу самых распространённых типов контракта. Они нашли применение в самых разных экономических сферах. Но есть область экономики, где этот тип договоров особенно популярен – строительная. Работы в этой сфере практически всегда строятся на отношениях подряда, в связи с чем возникла необходимость особо тщательной проработки законодательных нюансов договорного оформления этих отношений. Ряд особенностей, которые характерны для взаимодействия заказчика и исполнителя в строительстве, также способствовали выделению договора строительного подряда как особого вида контрактов.</p>
+                        <p>С помощью этого договора оформляется сделка между партнёрами, согласно которой подрядчик обязуется в определённые сроки построить объект по заданию заказчика или произвести смежные строительные работы. По этому же договору лицо, выступающее заказчиком, обязуется оплатить результат согласно установленной в соглашении цене, а также обеспечить подрядчику условия, требуемые для проведения работ.</p>
+                        <blockquote>
+                            Ключевой особенностью договоров строительного подряда является возможность привлечения профессионального инженера (инженерной организации). В этом случае необходимо оформление дополнительного договора поручения.
+                            <span>Носков Игорь Юриевич</span>
+                            <span>Адвокат, Кандидат юридических наук</span>
+                        </blockquote>
+                        <p>В строительстве, из-за большого объёма, зачастую часть задач подрядчик делегирует другим лицам – субподрядчикам. В этом случае генеральным подрядчиком также заключается договор подряда, но при согласии заказчика.</p>
+                        <div class="vstavka">
+                            <p><span>Вставка</span></p>
+                            <p>Ключевой особенностью договоров строительного подряда является возможность привлечения профессионального инженера (инженерной организации). В этом случае необходимо оформление дополнительного договора поручения.</p>
+                        </div>
+                        <p>Понятие договора строительного подряда зафиксировано в п. 1 ст. 740 Гражданского Кодекса Российской Федерации. Возможность привлечения к строительным работам инженера (инженерной организации) оговорено в ст. 749 ГК РФ. В целом выполнение работ в строительстве регулируется общими положениями о подряде, установленным гл. 37 ГК РФ. Если у сторон договора возникли разногласия, которые невозможно разрешить в мирном порядке, спор передаётся в арбитражный суд.</p>
+                        <img class="alignright" src="../../build/img/article.png" alt="">
+                        <p>Если заказчиком выступает частное лицо, применяются нормы, определяющие взаимоотношения сторон при заключении бытовых договоров подряда, то есть <a href="#">п. 3 ст. 740 ГК РФ и Закона о защите прав потребителей</a>. Соответственно, при возникновении споров вокруг бытового контракта их решает мировой суд.</p>
+                        <p>Так же бывают случаи, когда в качестве заказчика выступает публично-правовое образование, и в этом случае взаимоотношения сторон характеризуются в качестве подрядного договора для государственных или муниципальных нужд.</p>
+                        <p>Правовую базу при заключении подрядных договоров в строительстве дополняют строительные нормы и правил – СНИПы, следование которым обязательно, и стандарты и технические условия на материалы, детали, конструкции, использующиеся при выполнении работ. Это связано с тем, что от качества строительства зависит безопасность людей, поэтому требуется специальное регулирование данной сферы.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="article-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-12 offset-lg-2 offset-md-1 offset-0">
+                    <div class="form-plashka">
+                        <h2>Получить консультацию</h2>
+                        <img src="../../build/img/form2.jpg">
+                        <div class="overlay-solid"></div>
+                        <div class="overlay-grad"></div>
+                        <form action="#">
+                            <div class="main-form-wrp">
+                                <input type="text" name="" value="" placeholder="Имя" required="">
+                                <input type="email" name="" value="" placeholder="E-mail">
+                                <input type="tel" class="mask-phone" name="" value="" placeholder="Телефон" required="">
+                            </div>
+                            <input class="input-textarea" type="text" name="" value="" placeholder="Ваш вопрос">
+                            <input type="submit" class="get-consult" value="Получить консультацию">
+                            <p class="form-warning">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="/policy">Политиками Конфиденциальности</a></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="other-articles">
+        <div class="container">
+            <h2>Еще статьи по теме</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="article-block-prev">
+                        <div class="success-line"></div>
+                        <img src="../../build/img/articles1.jpg" alt="">
+                        <div class="articles-overlay"></div>
+                        <div class="article-block-prev-text">
+                            <div class="articles-plashka">Документы</div>
+                            <p class="article-block-prev-name">Договор строительного подряда</p>
+                            <p class="articles-data">16.03.2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="article-block-prev">
+                        <div class="success-line"></div>
+                        <img src="../../build/img/articles2.jpg" alt="">
+                        <div class="articles-overlay"></div>
+                        <div class="article-block-prev-text">
+                            <div class="articles-plashka">Полезное</div>
+                            <p class="article-block-prev-name">Срок договора подряда</p>
+                            <p class="articles-data">16.03.2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="article-block-prev">
+                        <div class="success-line"></div>
+                        <img src="../../build/img/articles3.jpg" alt="">
+                        <div class="articles-overlay"></div>
+                        <div class="article-block-prev-text">
+                            <div class="articles-plashka">Документы</div>
+                            <p class="article-block-prev-name">Односторонний отказ от договора подряда</p>
+                            <p class="articles-data">16.03.2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="article-block-prev">
+                        <div class="success-line"></div>
+                        <img src="../../build/img/articles4.jpg" alt="">
+                        <div class="articles-overlay"></div>
+                        <div class="article-block-prev-text">
+                            <div class="articles-plashka">Полезное</div>
+                            <p class="article-block-prev-name">Срок договора подряда</p>
+                            <p class="articles-data">16.03.2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer>
+    <div class="footer-top">
+        <div class="container">
+            <ul class="footer-list">
+                <li>
+                    <a href="/">
+                        <img src="../../build/img/logo.png" alt="">
+                    </a>
+                </li>
+                <li><a href="#"><span>Портфолио</span></a></li>
+                <li><a href="#"><span>Отзывы</span></a></li>
+                <li><a href="#"><span>Цены</span></a></li>
+                <li><a href="#"><span>Услуги</span></a></li>
+                <li><a href="#"><span>блог</span></a></li>
+                <li><a href="#"><span>Рейтинг</span></a></li>
+                <li><a href="#"><span>о нас</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+                <li><a href="#"><span>F.A.Q.</span></a></li>
+            </ul>
+            <div class="footer-middle">
+                <ul class="footer-data">
+                    <li>
+                        <a class="tel" href="tel:+7 (123) 456-78-90">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (123) 456-78-90</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@mail.ru">
+                            <img src="../../build/img/mail.svg" alt="">
+                            <span>mail@mail.ru</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.google.com/?ll=50.448820,30.513599" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Адрес компании, где принимаем клиентов</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header-socc">
+                    <li><a href="#"><i class="fab fa-viber"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <p class="same-woidth">(c) Company name. All rights reserved 2020</p>
+            <a href="/policy">Правовая информация</a>
+            <p class="same-woidth">Сделано с  <img src="../../build/img/heart.svg" alt="">  в <a href="https://simplexx.agency/">Simplexx</a></p>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div id="requestThnx" class="pop-up-general-block ">
+    <div class="pop-up-general-block-content">
+
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
+        </div>
+        <div class="pop-up-filter-mob">
+            <!-- FileInjector:popupFilter -->
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../build/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../build/js/selectize.min.js"></script>
+    <script src="../../build/js/selectize.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/jquery.floatit.js"></script>
+    <script src="../../build/js/pagination.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script src="../../build/js/wow.js"></script>
+    <script src="../../build/js/detect.js"></script>
+    <script src="../../build/js/animate.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+    <script>
+        // Initialize Google map page Contact
+        function initMap() {
+            var map;
+            var mapConteiner = $('#contact-map')[0];
+
+            var mapCenter = { lat: 50.448820, lng: 30.513599, };
+
+            map = new google.maps.Map(mapConteiner, {
+                center: mapCenter,
+                zoom: 14,
+                styles: [
+                          {
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#f5f5f5"
+                              }
+                            ]
+                          },
+                          {
+                            "elementType": "labels.icon",
+                            "stylers": [
+                              {
+                                "visibility": "off"
+                              }
+                            ]
+                          },
+                          {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#616161"
+                              }
+                            ]
+                          },
+                          {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                              {
+                                "color": "#f5f5f5"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "administrative.land_parcel",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#bdbdbd"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#eeeeee"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#757575"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#e5e5e5"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi.park",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#9e9e9e"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#ffffff"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#757575"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.highway",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#dadada"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#616161"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.local",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#9e9e9e"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "transit.line",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#e5e5e5"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "transit.station",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#eeeeee"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#c9c9c9"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#9e9e9e"
+                              }
+                            ]
+                          }
+                        ]
+            });
+
+            var marker = new google.maps.Marker({
+                position: mapCenter,
+                map: map,
+            });
+
+            // var infowindow = new google.maps.InfoWindow({
+            //   content:"улица Стройиндустрии, 4",
+            //   pixelOffset: new google.maps.Size(110, 40)
+            // });
+            // google.maps.event.addListener(marker, 'click', function() {
+            //   infowindow.open(map, marker);
+            // });
+            // google.maps.event.addDomListener(window, 'resize', function() {
+            //   var latLng;
+            //   if (window.matchMedia("(min-width: 400px)").matches) {
+            //     latLng = new google.maps.LatLng(bigLat,bigLng);
+            //   } else {
+            //     latLng = new google.maps.LatLng(smallLat,smallLng);
+            //   }
+            //   map.setCenter(latLng);
+            // });
+        };
+
+        initMap();
+    </script>
+</body>
+</html>

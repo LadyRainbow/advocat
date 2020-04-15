@@ -1,0 +1,187 @@
+.price-page {
+    h2 {
+        color: $dark;
+        margin-bottom: 64px;
+    }
+}
+.count-services {
+    text-align: right;
+    color: #B5B7B8;
+    span {
+        color: $text;
+    }
+}
+.select-row {
+    margin-bottom: 24px;
+}
+.select-price-wrp {
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #CCD7DC;
+    padding-bottom: 3px;
+    &::after {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        content: '\f078';
+        font-family: Font Awesome\ 5 Free;
+        font-weight: 900;
+        font-size: 10px;
+        color: rgba(6, 13, 18, 0.94);
+    }
+    p {
+        color: rgba(6, 13, 18, 0.94);
+        margin-right: 16px;
+    }
+    select {
+        color: #808080;
+        border: none;
+        cursor: pointer;
+        flex: 1;
+        position: relative;
+        z-index: 2;
+        background: transparent;
+    }
+}
+.select-price {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 1;
+
+}
+.not-found-block {
+    padding: 24px 25px;
+    color: #fff;
+    position: relative;
+    margin-top: 49px;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+        position: relative;
+        z-index: 2;
+    }
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+        -o-object-position: center;
+        object-position: center;
+    }
+    .overlay-solid {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(25, 46, 61, 0.7);
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+    }
+    .overlay-grad {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: -webkit-gradient(linear, left top, left bottom, from(rgba(6, 13, 18, 0)), to(rgba(6, 13, 18, 0.94)));
+        background: -webkit-linear-gradient(top, rgba(6, 13, 18, 0) 0%, rgba(6, 13, 18, 0.94) 100%);
+        background: -o-linear-gradient(top, rgba(6, 13, 18, 0) 0%, rgba(6, 13, 18, 0.94) 100%);
+        background: linear-gradient(180deg, rgba(6, 13, 18, 0) 0%, rgba(6, 13, 18, 0.94) 100%);
+    }
+    &:hover .overlay-solid {
+        background-color: rgba(25, 46, 61, 0.3);
+    }
+}
+.not-found-block-title {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 12px;
+}
+.btn-not-found {
+    @extend %BTN;
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-line {
+    height: 56px;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: #060D12;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: calc(100% - 30px);
+        height: 100%;
+        background-color: #E6EBEE;
+    }
+    .col-md-8 {
+        padding-left: 39px;
+    }
+}
+.simple-line {
+    margin-top: 24px;
+    .col-md-8 {
+        padding-left: 39px;
+    }
+    .col-md-4 {
+        color: rgba(6, 13, 18, 0.94);
+    }
+}
+@media (max-width: 1199px) {
+    .count-services {
+        text-align: left;
+        margin-top: 20px;
+    }
+}
+@media (max-width: 767px) {
+    .count-services {
+        text-align: left;
+        margin-top: 20px;
+    }
+    .title-line {
+        .col-md-4 {
+            display: none;
+        }
+    }
+    .select-price-wrp {
+        display: block;
+        padding-right: 20px;
+    }
+    .select-price {
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    .price-page h2 {
+        margin-bottom: 34px;
+    }
+    .simple-line .col-md-4 {
+        padding-left: 39px;
+        padding-right: 39px;
+        margin-top: 5px;
+    }
+    .simple-line .col-md-8 {
+        padding-right: 39px;
+    }
+}

@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Advocat</title>
+  <link rel="shortcut icon" type="image/png" href="https://alfa-cube.ru/img/favicon/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://w.cultserv.ru/css/common.css" rel="stylesheet" media="all">
+<link href="https://fonts.googleapis.com/css?family=PT+Serif|Roboto&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="../../build/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="../../build/css/selectize.css">
+  <link rel="stylesheet" href="../../build/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="../../build/css/style.css">
+</head>
+<body class="">
+    <div class="app">
+        <div class="header-wrapper">
+            <header>
+    <div class="header-top">
+        <div class="flex-vertical header-side">
+            <div class="burger flex-center"><span></span></div>
+            <a class="logo" href="/">
+                <img src="../../build/img/logo.png" alt="">
+                <span>Lawyer<br>Company</span>
+            </a>
+        </div>
+        <div class="header-phone-wrp header-side">
+            <a href="tel:+7 (123) 456-78-90">+7 (123) 456-78-90</a>
+        </div>
+        <div class="flex-vertical header-side flex-right">
+            <ul class="header-socc">
+                <li><a href="#"><i class="fab fa-viber"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+            </ul>
+            <div class="get-consult-header flex-center">Получить консультацию</div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <ul class="header-bottom-list header-bottom-list-end">
+            <li><a href="#">Портфолио</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Цены</a></li>
+            <li><a href="#">Услуги</a></li>
+        </ul>
+        <a class="header-bottom-logo" href="/">
+            <img src="../../build/img/logo.png" alt="">
+        </a>
+        <ul class="header-bottom-list">
+            <li><a href="#">блог</a></li>
+            <li><a href="#">Рейтинг</a></li>
+            <li><a href="#">о нас</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">F.A.Q.</a></li>
+        </ul>
+    </div>
+</header>
+
+        </div>
+        <div class="menu-wrapper">
+            <div class="menu">
+    <div class="menu-overlay"></div>
+    <div class="menu-content">
+        <div>
+            <div class="menu-content-top">
+                <a href="tel:+7 (123) 456-78-90">+7 (123) 456-78-90</a>
+            </div>
+            <ul class="menu-list">
+                <li><a href="#">Каталог продукции</a></li>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Проекты</a></li>
+                <li><a href="#">Проектировщику</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="get-consult flex flex-center">консультация</div>
+    </div>
+    <div class="btn-menu-close"></div>
+</div>
+
+        </div>
+        <div class="search-mob-wrapper">
+            <!-- FileInjector:search -->
+        </div>
+        <div class="pages-wrapper">
+            <div class="success-page header-pt pb112">
+    <div class="container">
+        <ul class="breadcrumbs-list">
+            <li><a href="/">Главная</a></li>
+            <li><a href="#">Портфолио</a></li>
+        </ul>
+        <h2>Наши успешные дела</h2>
+        <div class="success-page-content">
+            <ul class="success-filtres">
+                <li class="active">
+                    <span>Все</span>
+                    <span>12</span>
+                </li>
+                <li>
+                    <span>Анализ остальных фин компаний</span>
+                    <span>8</span>
+                </li>
+                <li>
+                    <span>Анализ КПК</span>
+                    <span>1</span>
+                </li>
+                <li>
+                    <span>Уголовные дела</span>
+                    <span>1</span>
+                </li>
+                <li>
+                    <span>Арбитражные дела</span>
+                    <span>1</span>
+                </li>
+                <li>
+                    <span>Административные дела</span>
+                    <span>1</span>
+                </li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="finanaliz">
+                    <div class="success-line"></div>
+                    <img src="../../build/img/success1.png" alt="">
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Анализ остальных фин компаний</span>
+                    </div>
+                    <p>Взыскали задолженность и процентов поставщиком угля с теплогенерирующей компании</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="kpk">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success2.jpg" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Анализ КПК</span>
+                    </div>
+                    <p>Взыскали задолженность и процентов поставщиком угля с теплогенерирующей компании</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="arbitration">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success2.jpg" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Арбитражные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="criminal">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success1.png" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Уголовные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="administrative">
+                    <div class="success-line"></div>
+                    <img src="../../build/img/success1.png" alt="">
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Административные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="finanaliz">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success1.png" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Анализ остальных фин компаний</span>
+                    </div>
+                    <p>Взыскали задолженность и процентов поставщиком угля с теплогенерирующей компании</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="kpk">
+                    <div class="success-line"></div>
+                    <img src="../../build/img/success2.jpg" alt="">
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Анализ КПК</span>
+                    </div>
+                    <p>Взыскали задолженность и процентов поставщиком угля с теплогенерирующей компании</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="arbitration">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success2.jpg" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Арбитражные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="criminal">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success1.png" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Уголовные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="administrative">
+                    <div class="success-line"></div>
+                    <img src="../../build/img/success1.png" alt="">
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Административные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="criminal">
+                    <div class="success-line"></div>
+                    <!-- <img src="../../build/img/success1.png" alt=""> -->
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Уголовные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-12">
+                <div class="success-block" data-bg="administrative">
+                    <div class="success-line"></div>
+                    <img src="../../build/img/success1.png" alt="">
+                    <div class="overlay-solid"></div>
+                    <div class="overlay-grad"></div>
+                    <div class="success-title">
+                        <div class="success-title-img"></div>
+                        <span>Административные дела</span>
+                    </div>
+                    <p>Обращено взыскание на земельные участки должника</p>
+                </div>
+            </div>
+        </div>
+        <div id="pagination-container-success"></div>
+    </div>
+</div>
+
+        </div>
+        <div class="footer-wrapper">
+            <footer>
+    <div class="footer-top">
+        <div class="container">
+            <ul class="footer-list">
+                <li>
+                    <a href="/">
+                        <img src="../../build/img/logo.png" alt="">
+                    </a>
+                </li>
+                <li><a href="#"><span>Портфолио</span></a></li>
+                <li><a href="#"><span>Отзывы</span></a></li>
+                <li><a href="#"><span>Цены</span></a></li>
+                <li><a href="#"><span>Услуги</span></a></li>
+                <li><a href="#"><span>блог</span></a></li>
+                <li><a href="#"><span>Рейтинг</span></a></li>
+                <li><a href="#"><span>о нас</span></a></li>
+                <li><a href="#"><span>Контакты</span></a></li>
+                <li><a href="#"><span>F.A.Q.</span></a></li>
+            </ul>
+            <div class="footer-middle">
+                <ul class="footer-data">
+                    <li>
+                        <a class="tel" href="tel:+7 (123) 456-78-90">
+                            <i class="fas fa-phone"></i>
+                            <span>+7 (123) 456-78-90</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:mail@mail.ru">
+                            <img src="../../build/img/mail.svg" alt="">
+                            <span>mail@mail.ru</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.google.com/?ll=50.448820,30.513599" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Адрес компании, где принимаем клиентов</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="header-socc">
+                    <li><a href="#"><i class="fab fa-viber"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <div class="container">
+            <p class="same-woidth">(c) Company name. All rights reserved 2020</p>
+            <a href="/policy">Правовая информация</a>
+            <p class="same-woidth">Сделано с  <img src="../../build/img/heart.svg" alt="">  в <a href="https://simplexx.agency/">Simplexx</a></p>
+        </div>
+    </div>
+</footer>
+
+        </div>
+        <div class="pop-up-overlay-wrapper">
+            <div class="overlay-pop-up"></div>
+            <div id="requestThnx" class="pop-up-general-block ">
+    <div class="pop-up-general-block-content">
+
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+
+        </div>
+        <div class="pop-up-filter-mob">
+            <!-- FileInjector:popupFilter -->
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Jquery Validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="../../build/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../../build/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../build/js/selectize.min.js"></script>
+    <script src="../../build/js/selectize.js"></script>
+    <script src="../../build/js/jquery.maskedinput.min.js"></script>
+    <script src="../../build/js/jquery.floatit.js"></script>
+    <script src="../../build/js/pagination.js"></script>
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+    <script src="../../build/js/wow.js"></script>
+    <script src="../../build/js/detect.js"></script>
+    <script src="../../build/js/animate.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="../../build/js/main.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4R9PQyMDROizmuglGKqxCnsFl62st7pM"></script>
+    <script>
+        // Initialize Google map page Contact
+        function initMap() {
+            var map;
+            var mapConteiner = $('#contact-map')[0];
+
+            var mapCenter = { lat: 50.448820, lng: 30.513599, };
+
+            map = new google.maps.Map(mapConteiner, {
+                center: mapCenter,
+                zoom: 14,
+                styles: [
+                          {
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#f5f5f5"
+                              }
+                            ]
+                          },
+                          {
+                            "elementType": "labels.icon",
+                            "stylers": [
+                              {
+                                "visibility": "off"
+                              }
+                            ]
+                          },
+                          {
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#616161"
+                              }
+                            ]
+                          },
+                          {
+                            "elementType": "labels.text.stroke",
+                            "stylers": [
+                              {
+                                "color": "#f5f5f5"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "administrative.land_parcel",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#bdbdbd"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#eeeeee"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#757575"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi.park",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#e5e5e5"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "poi.park",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#9e9e9e"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#ffffff"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.arterial",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#757575"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.highway",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#dadada"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.highway",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#616161"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "road.local",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#9e9e9e"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "transit.line",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#e5e5e5"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "transit.station",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#eeeeee"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "water",
+                            "elementType": "geometry",
+                            "stylers": [
+                              {
+                                "color": "#c9c9c9"
+                              }
+                            ]
+                          },
+                          {
+                            "featureType": "water",
+                            "elementType": "labels.text.fill",
+                            "stylers": [
+                              {
+                                "color": "#9e9e9e"
+                              }
+                            ]
+                          }
+                        ]
+            });
+
+            var marker = new google.maps.Marker({
+                position: mapCenter,
+                map: map,
+            });
+
+            // var infowindow = new google.maps.InfoWindow({
+            //   content:"улица Стройиндустрии, 4",
+            //   pixelOffset: new google.maps.Size(110, 40)
+            // });
+            // google.maps.event.addListener(marker, 'click', function() {
+            //   infowindow.open(map, marker);
+            // });
+            // google.maps.event.addDomListener(window, 'resize', function() {
+            //   var latLng;
+            //   if (window.matchMedia("(min-width: 400px)").matches) {
+            //     latLng = new google.maps.LatLng(bigLat,bigLng);
+            //   } else {
+            //     latLng = new google.maps.LatLng(smallLat,smallLng);
+            //   }
+            //   map.setCenter(latLng);
+            // });
+        };
+
+        initMap();
+    </script>
+</body>
+</html>

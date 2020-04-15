@@ -1,0 +1,99 @@
+footer {
+    background-color: #0C171F;
+    padding-top: 40px;
+    .header-socc {
+        padding-right: 0;
+    }
+}
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    li {
+        img {
+            width: 80px;
+        }
+        span {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 15px;
+            text-align: right;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            border-bottom: 2px solid rgba(236, 187, 121, 0.01);
+            color: $gold;
+            &:hover {
+                border-bottom-color: rgba(236, 187, 121, 0.5);
+            }
+        }
+    }
+}
+.footer-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 37px;
+}
+.footer-data {
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'PT Serif', serif;
+    display: flex;
+    align-items: center;
+    li {
+        & + li {
+            margin-left: 50px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            transition: .2s;
+            i {
+                margin-right: 14px;
+                font-size: 12px;
+            }
+            &.tel {
+                i {
+                    transform: scale(-1, 1);
+                }
+            }
+            &:hover {
+                color: $gold;
+                img {
+                    filter:  brightness(0) saturate(100%) invert(95%) sepia(51%) saturate(2431%) hue-rotate(305deg) brightness(104%) contrast(85%);
+                }
+            }
+        }
+        img {
+            margin-top: 3px;
+            margin-right: 14px;
+        }
+    }
+}
+.copyright {
+    padding-top: 12px;
+    padding-bottom: 16px;
+    color: rgba(114, 135, 150, 0.5);
+    background-color: #081117;
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        a {
+            text-decoration-line: underline;
+            color: #728796;
+            transition: .2s;
+            &:hover {
+                color: rgba(236, 187, 121, 0.5);
+            }
+        }
+        .same-woidth {
+            flex: 1;
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+}

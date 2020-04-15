@@ -1,0 +1,97 @@
+.pop-up-overlay-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    // height: 100vh;
+    // height: calc(var(--vhR, 1vh) * 100);
+    z-index: 5;
+    .overlay-pop-up {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 6;
+    }
+    &.active {
+        display: flex;
+        opacity: 1;
+    }
+}
+.pop-up-filter-mob  {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 5;
+    background-color: #061231;
+    padding: 40px 20px;
+    &.active {
+        display: block;
+    }
+}
+.pop-up-general-block {
+    position: relative;
+    overflow-y: auto;
+    z-index: 7;
+    padding: 20px 0px;
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+.pop-up-general-block-close-btn {
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    width: 13px;
+    height: 13px;
+    display: block;
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -2px;
+        top: 5px;
+        width: 17px;
+        height: 2px;
+        display: block;
+        background-color: $text;
+        transform: rotate(42deg);
+        transition: .2s;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        right: -2px;
+        top: 5px;
+        width: 17px;
+        height: 2px;
+        display: block;
+        background-color: $text;
+        transform: rotate(-42deg);
+        transition: .2s;
+    }
+    &:hover {
+        &::after, &::before {
+            box-shadow: 0 0 5px 1px rgba(255,255,255,.7);
+        }
+    }
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background-color: transparent;
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
+    background-color: #fff;
+}

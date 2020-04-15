@@ -1,0 +1,148 @@
+.kpk-page {
+    padding-top: 50px;
+    background-color: #fff;
+    h2 {
+        margin-bottom: 40px;
+        color: #fff;
+    }
+}
+.kpk-start {
+    position: relative;
+    background-color: #060D12;
+    padding: 59px 0 149px;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+    .back {
+        margin-bottom: 26px;
+    }
+}
+.kpk-btns-wrp {
+    flex-wrap: wrap;
+}
+.kpk-btn1 {
+    @extend %BTN;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 0 28px;
+    text-align: center;
+    line-height: 1.2;
+}
+.kpk-btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 24px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #ECBB79;
+    background-color: #11222E;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 13px;
+    margin-left: 24px;
+    &:hover {
+        background-color: #1A3345;
+    }
+}
+// white part
+.kpk-page-content {
+    background-color: #fff;
+}
+.kpk-card {
+    position: relative;
+    z-index: 2;
+    margin-top: -75px;
+    padding: 24px 24px 34px;
+    background: #FFFFFF;
+    border: 1px solid #ECBB79;
+    box-shadow: 0px 0 20px 2px rgba(236, 187, 121, 0.3);
+    h3 {
+        margin: 16px 0 12px;
+    }
+    .flex-vertical {
+        .kpk-property {
+            margin-bottom: 0;
+            margin-right: 16px;
+        }
+        &.middle {
+            margin: 16px 0;
+        }
+    }
+    .point {
+        margin-right: 5px;
+    }
+    .good {
+        margin-bottom: 5px;
+    }
+    span {
+        & + .point {
+            margin-left: 22px;
+        }
+    }
+}
+.kpk-property {
+    color: #B5B7B8;
+    margin-bottom: 8px;
+}
+.kpk-value {
+    a {
+        transition: .2s;
+        &:hover {
+            color: $goldHover
+        }
+    }
+    & + .kpk-value {
+        margin-top: 16px;
+    }
+}
+.basic-information {
+    margin-top: 32px;
+    background: #FFFFFF;
+    border: 1px solid #CCD7DC;
+    padding: 32px 24px 40px;
+    .row + .row {
+        margin-top: 12px;
+    }
+    .col-12:first-child {
+        color: #B5B7B8;
+    }
+}
+
+
+
+@media (max-width: 1199px) {
+
+}
+@media (max-width: 991px) {
+    .kpk-btn2 {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .kpk-card {
+        padding: 24px 24px 14px;
+        .col-12 {
+            padding-bottom: 20px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .kpk-start {
+        padding-top: 30px;
+    }
+}

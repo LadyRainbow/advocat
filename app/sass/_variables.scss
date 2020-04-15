@@ -1,0 +1,16 @@
+// mixin for counting
+@mixin calc-width($property, $value) {
+    #{$property}: calc(#{$value} * 100vw / 1366);
+}
+@mixin calc-height($property, $value) {
+    #{$property}: calc(#{$value} * 100vh / 969);
+}
+@mixin calc-heightMob($property, $value) {
+    #{$property}: calc(#{$value} * 100vh / 497);
+}
+
+
+$text: #808080;
+$gold: #ECBB79;
+$dark: #060D12;
+$goldHover: #B28754;
