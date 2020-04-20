@@ -11,10 +11,6 @@ const config = {
             file: 'menu\\menu.html',
             placeholders: {}
         },
-        search: {
-            file: 'search\\search.html',
-            placeholders: {}
-        },
         pagesContent: {
             file: 'policy\\policy.html',
             placeholders: {}

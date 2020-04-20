@@ -12,7 +12,7 @@ const config = {
             placeholders: {}
         },
         pagesContent: {
-            file: '404\\404-page.html',
+            file: 'addKpk\\addKpk.html',
             placeholders: {}
         },
         footer: {

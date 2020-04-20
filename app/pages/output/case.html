@@ -39,7 +39,7 @@
                 <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
                 <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
             </ul>
-            <div class="get-consult-header flex-center">Получить консультацию</div>
+            <div class="get-consult-header flex-center open-consult-pop-up-btn">Получить консультацию</div>
         </div>
     </div>
     <div class="header-bottom">
@@ -79,7 +79,7 @@
                 <li><a href="#">Контакты</a></li>
             </ul>
         </div>
-        <div class="get-consult flex flex-center">консультация</div>
+        <div class="get-consult flex flex-center open-consult-pop-up-btn">консультация</div>
     </div>
     <div class="btn-menu-close"></div>
 </div>
@@ -296,16 +296,84 @@
         </div>
         <div class="pop-up-overlay-wrapper">
             <div class="overlay-pop-up"></div>
-            <div id="requestThnx" class="pop-up-general-block ">
+            <div id="reviewPopUp" class="pop-up-general-block">
+    <div class="pop-up-general-block-content mCustomScrollbar">
+        <h3>Отзыв о КПК</h3>
+        <p>Отзыв могут оставить только действующие члены КПК или члены КПК с истекшим договором.</p>
+        <form action="#">
+            <div class="flex-vertical pop-up-radio-wrp">
+                <label class="radio">
+                    <input type="radio" name="7" checked/>
+                    <div class="radio__text">Положительный отзыв</div>
+                </label>
+                <label class="radio">
+                    <input type="radio" name="7" />
+                    <div class="radio__text">Отрицательный отзыв</div>
+                </label>
+            </div>
+            <input type="text" class="popup-input" placeholder="Имя и Фамилия" required>
+            <input type="text" class="popup-input" placeholder="E-mail" required>
+            <input type="tel" class="popup-input input-phone" placeholder="Телефон для связи" required>
+            <input type="text" class="popup-input" placeholder="КПК, о котором хотите оставить отзыв" required>
+            <input type="text" class="popup-input" placeholder="Номер Вашего договора в этом КПК" required>
+            <textarea class="popup-input" name="name" placeholder="Отзыв"></textarea>
+            <input type="submit" class="get-consult" value="Получить консультацию">
+            <p class="form-warning">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="/policy">Политиками Конфиденциальности</a></p>
+        </form>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="ratePopUp" class="pop-up-general-block">
+    <div class="pop-up-general-block-content mCustomScrollbar">
+        <h3>Узнать ставку по вложениям и кредитам</h3>
+        <p class="popup-title">Оставьте заявку и мы скоро с вами свяжемся и подскажем актуальную информацию о данном КПК.</p>
+        <form action="#">
+            <input type="text" class="popup-input" placeholder="Имя и Фамилия" required>
+            <input type="tel" class="popup-input input-phone" placeholder="Телефон для связи" required>
+            <p class="popup-subtitle">Что Вас интересует?</p>
+            <div class="flex-vertical pop-up-radio-wrp">
+                <label class="checkbox">
+                    <input type="checkbox"/>
+                    <div class="checkbox__text">Кредит</div>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox"/>
+                    <div class="checkbox__text">Вклад</div>
+                </label>
+                <label class="checkbox">
+                    <input type="checkbox"/>
+                    <div class="checkbox__text">Маткапитал</div>
+                </label>
+            </div>
+            <input type="submit" class="get-consult" value="Отправить заявку">
+            <p class="form-warning">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="/policy">Политиками Конфиденциальности</a></p>
+        </form>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="consultPopUp" class="pop-up-general-block">
+    <div class="pop-up-general-block-content mCustomScrollbar">
+        <h3>Мы проконсультируем Вас</h3>
+        <form action="#">
+            <input type="text" class="popup-input" placeholder="Имя и Фамилия" required>
+            <input type="tel" class="popup-input input-phone" placeholder="Телефон для связи" required>
+            <input type="text" class="popup-input" placeholder="E-mail" required>
+            <textarea class="popup-input" name="name" placeholder="Ваш вопрос"></textarea>
+            <input type="submit" class="get-consult" value="Получить консультацию">
+            <p class="form-warning">Нажимая на кнопку, вы соглашаетесь на обработку персональных данных в соответствии с <a href="/policy">Политиками Конфиденциальности</a></p>
+        </form>
+    </div>
+    <div class="pop-up-general-block-close-btn"></div>
+</div>
+<div id="thnx" class="pop-up-general-block">
     <div class="pop-up-general-block-content">
-
+        <h3>Спасибо за обращение!</h3>
+        <p>Наш специалист свяжется с Вами в течение 24 часов</p>
+        <a href="/" class="get-consult flex-center">Вернуться на главную</a>
     </div>
     <div class="pop-up-general-block-close-btn"></div>
 </div>
 
-        </div>
-        <div class="pop-up-filter-mob">
-            <!-- FileInjector:popupFilter -->
         </div>
     </div>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

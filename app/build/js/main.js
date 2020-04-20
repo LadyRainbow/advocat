@@ -155,8 +155,13 @@ $(document).ready(function () {
         ]
     });
 
-
-
+    // faq
+    $('.more-filtres-btn').click(function () {
+        $(this).css('display', 'none');
+        $('.fag-overlay').css('display', 'none');
+        $('.faq-filtres').removeClass('cutFiltres');
+    });
+    // menu
     $('.btn-menu-close').click(function () {
         $('.menu').fadeOut();
         $('.burger').removeClass('opacity');
@@ -238,45 +243,110 @@ $(document).ready(function () {
             }
         });
     };
+    // kpk page
+    $('.kpk-reviews-nav li').click(function () {
+        $('.kpk-reviews-nav li').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    if($('.kpk-page').length) {
+        $('#pagination-container-kpk').pagination({
+            dataSource: function(done){
+              var result = [];
+              for (var i = 1; i <= 10; i++) {
+                result.push(i);
+              }
+              done(result);
+            },
+            pageSize: 6,
+            showPrevious: true,
+            showNext: true,
+            callback: function(data, pagination) {
+                // template method of yourself
+                $('.paginationjs-prev a').html('<i class="fas fa-arrow-left"></i>');
+                $('.paginationjs-next a').html('<i class="fas fa-arrow-right"></i>');
+            }
+        });
+    };
+
+    // rate
+    // select
+    $('.select-custom').selectize({
+        items: null,
+        create: true,
+        sortField: 'text'
+    });
+    $(".selectize-input input").attr('readonly','readonly');
+
+    if($('.rate-page').length) {
+        $('#pagination-container-rate').pagination({
+            dataSource: function(done){
+              var result = [];
+              for (var i = 1; i <= 10; i++) {
+                result.push(i);
+              }
+              done(result);
+            },
+            pageSize: 6,
+            showPrevious: true,
+            showNext: true,
+            callback: function(data, pagination) {
+                // template method of yourself
+                $('.paginationjs-prev a').html('<i class="fas fa-arrow-left"></i>');
+                $('.paginationjs-next a').html('<i class="fas fa-arrow-right"></i>');
+            }
+        });
+    };
+
+    // masked
+     $('.input-phone').mask('+9 (999) 999-99-99');
 
     // pop-ups
-    $openFilterMobBtn.click(function () {
-        $('body, html').addClass('active');
-        $popUpGeneralBlock.removeClass('active');
-        $popUpFilterMob.addClass('active');
-    });
-
-    $openPopupServicesNavMob.click(function () {
-        $('body, html').addClass('active');
-        $popUpGeneralBlock.removeClass('active');
-        $popupServicesNavMob.addClass('active');
-    });
-
     $overlay.click(function () {
         $overlayPopUpWRP.removeClass('active');
         $('body, html').removeClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $popUpFilterMob.removeClass('active');
-        $popupServicesNavMob.removeClass('active');
     });
     $closePopUpBtn.click(function () {
         $overlayPopUpWRP.removeClass('active');
         $('body, html').removeClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $popUpFilterMob.removeClass('active');
-        $popupServicesNavMob.removeClass('active');
     });
 
     // open pop-ups functions
-    function requestThnx () {
+    function reviewPopUp () {
         $overlayPopUpWRP.addClass('active');
         $('body, html').addClass('active');
         $popUpGeneralBlock.removeClass('active');
-        $('#requestThnx').addClass('active');
+        $('#reviewPopUp').addClass('active');
     };
-
-    $('.how-to-get-btn').click(function (e) {
-        e.preventDefault()
-        howToGet ();
+    function ratePopUp () {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#ratePopUp').addClass('active');
+    };
+    function consultPopUp () {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#consultPopUp').addClass('active');
+    };
+    function thnx () {
+        $overlayPopUpWRP.addClass('active');
+        $('body, html').addClass('active');
+        $popUpGeneralBlock.removeClass('active');
+        $('#thnx').addClass('active');
+    };
+    $('.open-review-pop-up-btn').click(function () {
+        reviewPopUp ();
+    });
+    $('.open-rate-pop-up-btn').click(function () {
+        ratePopUp ();
+    });
+    $('.open-consult-pop-up-btn').click(function () {
+        $('.menu').fadeOut();
+        $('.burger').removeClass('opacity');
+        consultPopUp ();
     });
 });

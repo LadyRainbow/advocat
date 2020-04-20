@@ -17,7 +17,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(6, 13, 18, 0.94);
         z-index: 6;
     }
     &.active {
@@ -25,73 +25,167 @@
         opacity: 1;
     }
 }
-.pop-up-filter-mob  {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow-y: auto;
-    z-index: 5;
-    background-color: #061231;
-    padding: 40px 20px;
-    &.active {
-        display: block;
-    }
-}
-.pop-up-general-block {
+.pop-up-general-block-content {
+    width: 544px;
     position: relative;
     overflow-y: auto;
     z-index: 7;
-    padding: 20px 0px;
+    padding: 32px 32px 47px;
+    background-color: #fff;
+    max-height: 95vh;
+}
+.pop-up-general-block {
+    position: relative;
     display: none;
     &.active {
         display: block;
     }
+    .radio + .radio {
+        margin-left: 32px;
+    }
+    .checkbox + .checkbox {
+        margin-left: 40px;
+    }
+    .radio__text, .checkbox__text  {
+        color: #728796;
+    }
+    .radio__text {
+        &::before {
+            border-radius: 50%;
+            background: rgba(6, 13, 18, 0.05);
+            border: 1px solid rgba(6, 13, 18, 0.1);
+        }
+        &::after {
+            top: 5px;
+            left: 7px;
+            background: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #728796;
+        }
+    }
+    .get-consult {
+        width: 100%;
+        margin-top: 40px;
+        &::after, &::before {
+            display: none;
+        }
+        &:hover {
+            background: rgba(6, 13, 18, 0.05);
+            color: $gold;
+        }
+    }
+    .form-warning {
+        width: 100%;
+        text-align: left;
+        color: $text;
+    }
+}
+.pop-up-radio-wrp {
+    margin-top: 26px;
+    margin-bottom: 42px;
+}
+.popup-subtitle {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.04em;
+    color: #060D12;
+    font-family: 'PT Serif', serif;
+    margin-top: 40px;
 }
 .pop-up-general-block-close-btn {
     position: absolute;
-    top: 21px;
-    right: 21px;
-    width: 13px;
-    height: 13px;
+    top: -32px;
+    right: -32px;
+    width: 32px;
+    height: 32px;
     display: block;
     cursor: pointer;
-    &::before {
-        content: '';
-        position: absolute;
-        left: -2px;
-        top: 5px;
-        width: 17px;
-        height: 2px;
-        display: block;
-        background-color: $text;
-        transform: rotate(42deg);
-        transition: .2s;
-    }
-    &::after {
-        content: '';
-        position: absolute;
-        right: -2px;
-        top: 5px;
-        width: 17px;
-        height: 2px;
-        display: block;
-        background-color: $text;
-        transform: rotate(-42deg);
-        transition: .2s;
-    }
+    transition: .2s;
+    z-index: 7;
+    border-radius: 50%;
+    background: url('../img/close.png') center no-repeat;
+    background-size: contain;
     &:hover {
-        &::after, &::before {
-            box-shadow: 0 0 5px 1px rgba(255,255,255,.7);
-        }
+        transform: scale(1.1);
     }
 }
-
+.popup-input {
+    width: 100%;
+    height: 52px;
+    background: rgba(6, 13, 18, 0.05);
+    border: 1px solid rgba(6, 13, 18, 0.1);
+    padding: 16px 18px;
+    color: $dark;
+    font-size: 14px;
+    line-height: 20px;
+    &::placeholder {
+        color: #728796;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &:focus {
+        border-color: $gold;
+    }
+    & + .popup-input {
+        margin-top: 16px;
+    }
+}
+textarea.popup-input {
+    height: 104px;
+}
 .mCSB_scrollTools .mCSB_draggerRail {
     background-color: transparent;
 }
+.mCSB_inside > .mCSB_container {
+    margin-right: 0;
+}
+.mCSB_scrollTools {
+    right: -10px;
+}
 .mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
     background-color: #fff;
+}
+.popup-title {
+    margin-bottom: 40px;
+}
+#consultPopUp h3 {
+    margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+    .pop-up-general-block-content {
+        width: 95vw;
+        padding: 22px 18px 47px;
+    }
+    .pop-up-general-block-close-btn {
+        top: 12px;
+        right: 12px;
+        background-color: #fff;
+    }
+    .pop-up-radio-wrp {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 28px;
+        .radio + .radio {
+            margin-left: 0;
+            margin-top: 12px;
+        }
+    }
+    .pop-up-general-block h3 {
+        padding-right: 20px;
+    }
+    .pop-up-general-block .checkbox + .checkbox {
+        margin-left: 10px;
+    }
+    .pop-up-general-block .get-consult {
+        margin-top: 20px;
+    }
+    .popup-title {
+        margin-bottom: 20px;
+    }
+    #consultPopUp h3 {
+        margin-bottom: 20px;
+    }
 }

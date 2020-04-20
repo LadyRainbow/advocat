@@ -29,6 +29,12 @@
         -o-object-position: center;
         object-position: center;
     }
+    &::before {
+        content: url("../img/lot-stars.png");
+        position: absolute;
+        top: 13px;
+        left: 13px;
+    }
 }
 .author {
     font-size: 16px;

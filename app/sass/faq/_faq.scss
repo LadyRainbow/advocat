@@ -1,7 +1,7 @@
 .faq-page {
     background-color: #fff;
     h2 {
-        margin-bottom: 64px;
+        margin-bottom: 48px;
         color: $dark;
     }
     .not-found-block {
@@ -14,6 +14,7 @@
     align-items: center;
     margin: 0 -16px;
     margin-bottom: 12px;
+    overflow: hidden;
     li {
         display: flex;
         align-items: flex-start;
@@ -49,15 +50,17 @@
             }
         }
     }
+    &.cutFiltres {
+        height: 33px;
+    }
 }
 .faq-filtres-wrp {
     position: relative;
-
 }
 .fag-overlay {
     position: absolute;
     top: 5px;
-    right: 0;
+    right: 85px;
     height: 22px;
     width: 262px;
     background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%);
@@ -87,9 +90,19 @@
         background-color: #ECBB79;
     }
 }
-
+.faq-filtres-mob {
+    display: none;
+}
 @media (max-width: 767px) {
     .faq-page h2 {
         margin-bottom: 34px;
+    }
+}
+@media (max-width: 480px) {
+    .faq-filtres-wrp {
+        display: none;
+    }
+    .faq-filtres-mob {
+        display: block;
     }
 }

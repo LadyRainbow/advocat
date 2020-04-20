@@ -1,0 +1,71 @@
+.addKpk-page {
+    background-color: #060D12;
+    h2 {
+        margin-bottom: 24px;
+        color: #fff;
+    }
+    .radio__text, .checkbox__text {
+        &:hover {
+            color: #fff;
+        }
+        &::before {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        & + .radio__text, & + .checkbox__text {
+            margin-top: 20px;
+        }
+    }
+    .radio, .checkbox {
+        display: block;
+        & + .radio, & + .checkbox {
+            margin-top: 20px;
+        }
+    }
+    .get-consult {
+        margin-top: 56px;
+    }
+}
+.add-enter-text {
+    color: #fff;
+}
+.addKpk-page-content {
+    padding-top: 32px;
+}
+.addkpk-input {
+    @extend %input;
+    width: 100%;
+    margin-top: 24px;
+}
+textarea.addkpk-input {
+    height: 204px;
+}
+.addKpk-page-subtitle {
+    margin-top: 40px;
+    margin-bottom: 24px;
+    color: #fff;
+    & + .radio, .checkbox {
+        margin-top: 4px;
+    }
+    &.sub {
+        margin-bottom: 0;
+        & + .addKpk-page-subtitle {
+            margin-top: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .addKpk-page .get-consult {
+        margin-top: 36px;
+    }
+    textarea.addkpk-input {
+        height: 104px;
+    }
+    .addKpk-page-subtitle {
+        margin-bottom: 22px;
+    }
+}
+@media (max-width: 480px) {
+
+}
